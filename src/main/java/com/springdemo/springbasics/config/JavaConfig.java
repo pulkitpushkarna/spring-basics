@@ -7,26 +7,27 @@ import com.springdemo.springbasics.component.Restaurant;
 import com.springdemo.springbasics.component.Tea;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 @Configuration
 public class JavaConfig {
 
 
 //    @Bean
+//    @Primary
 //    Tea tea(){
 //        return new Tea();
 //    }
-
-
-    @Bean
-    ExpressTea tea(){
-        return new ExpressTea();
-    }
-
-    @Bean
-    public Restaurant restaurant(HotDrink hotDrink){
-        return new Restaurant(hotDrink);
-    }
+//
+//    @Bean
+//    ExpressTea expressTea(){
+//        return new ExpressTea();
+//    }
+//
+//    @Bean
+//    public Restaurant restaurant(HotDrink hotDrink){
+//        return new Restaurant(hotDrink);
+//    }
 
 
 }
